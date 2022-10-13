@@ -1,0 +1,72 @@
+#mainInicio {
+    margin: 0px 0px 10px 0px;
+
+    .medios {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .envio-pais {
+            font-size: 50px;
+            display: flex;
+            justify-content: flex-end;
+            margin: 30px 10px 20px 0px;
+
+            .courier {
+                width: 50px;
+            }
+
+            .mensaje-somos {
+                font-size: 20px;
+                display: flex;
+                justify-content: end;
+            }
+
+        }
+
+        .cuotas-interes {
+            font-size: 50px;
+            display: flex;
+            justify-content: flex-end;
+            margin: 30px 10px 20px 0px;
+
+            .tarjetas {
+                width: 120px;
+            }
+
+            .mensaje-somos {
+                font-size: 20px;
+                display: flex;
+                justify-content: end;
+            }
+
+        }
+
+
+
+    }
+
+    .linea {
+        border-top: 2px solid black;
+        height: 2px;
+        padding: 0;
+
+
+    }
+
+    .mensajeBienvenida {
+        font-size: 50px;
+        display: flex;
+        justify-content: flex-end;
+        margin: 30px 10px 20px 0px;
+
+    }
+
+    .mensaje-somos {
+        font-size: 20px;
+        display: flex;
+        justify-content: end;
+    }
+
+
+}

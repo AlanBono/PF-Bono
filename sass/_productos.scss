@@ -1,0 +1,201 @@
+#mainProductos {
+    margin: 50px 50px 50px 50px;
+
+    #productos {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-bottom: 40px;
+
+        .titulo-productos {
+            font-size: 50px;
+
+
+        }
+    }
+
+    .carreteProd-primero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 50px;
+
+        .tarjetaProd {
+            width: 500px;
+
+            .imagProd {
+                border-radius: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+
+                .imagConsolas {
+                    width: 100%;
+                    border-radius: 10px 10px 10px 10px;
+
+                }
+
+                .imagConsolas:hover {
+                    transform: scale(1.1);
+                    transition-duration: 1000ms;
+
+
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 15px;
+
+                }
+
+                strong {
+                    display: flex;
+                    justify-content: center;
+                }
+
+            }
+
+        }
+
+    }
+
+    .carreteProd-segundo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 50px;
+
+        .tarjetaProd {
+            width: 500px;
+
+            .imagProd {
+                border-radius: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+
+                .imagConsolas {
+                    width: 100%;
+                    border-radius: 10px 10px 10px 10px;
+
+                }
+
+                .imagConsolas:hover {
+                    transform: scale(1.1);
+                    transition-duration: 1000ms;
+
+
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 15px;
+
+                }
+
+                strong {
+                    display: flex;
+                    justify-content: center;
+                }
+
+            }
+
+        }
+
+    }
+
+    .carreteProd-tercero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 50px;
+
+        .tarjetaProd {
+            width: 500px;
+
+            .imagProd {
+                border-radius: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+
+                .imagConsolas {
+                    width: 100%;
+                    border-radius: 10px 10px 10px 10px;
+
+                }
+
+
+                .imagConsolas:hover {
+                    transform: scale(1.1);
+                    transition-duration: 1000ms;
+
+
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 15px;
+
+                }
+
+                strong {
+                    display: flex;
+                    justify-content: center;
+                }
+
+            }
+
+        }
+
+    }
+
+    .carreteProd-cuarto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 50px;
+
+        .tarjetaProd {
+            width: 500px;
+
+            .imagProd {
+                border-radius: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+
+                .imagConsolas {
+                    width: 100%;
+                    border-radius: 10px 10px 10px 10px;
+
+                }
+
+                .imagConsolas:hover {
+                    transform: scale(1.1);
+                    transition-duration: 1000ms;
+
+
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 15px;
+
+                }
+
+                strong {
+                    display: flex;
+                    justify-content: center;
+                }
+
+            }
+
+        }
+
+    }
+}

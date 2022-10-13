@@ -1,0 +1,725 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*-------------------------------------------*/
+/*comienza el header*/
+header {
+  background-color: rgb(250, 242, 242);
+  padding: 10px 10px 0px 10px;
+}
+
+.barraNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 200px;
+}
+
+.busqueda {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 200px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 20px;
+  color: rgb(10, 10, 65);
+}
+
+a:hover {
+  color: rgb(146, 146, 146);
+  transition-duration: 0.7s;
+}
+
+#logo .logo {
+  margin-bottom: -80px;
+}
+
+/*termina el header*/
+/*-------------------------------------------*/
+#mainInicio {
+  margin: 0px 0px 10px 0px;
+}
+#mainInicio .medios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#mainInicio .medios .envio-pais {
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 10px 20px 0px;
+}
+#mainInicio .medios .envio-pais .courier {
+  width: 50px;
+}
+#mainInicio .medios .envio-pais .mensaje-somos {
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+}
+#mainInicio .medios .cuotas-interes {
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 10px 20px 0px;
+}
+#mainInicio .medios .cuotas-interes .tarjetas {
+  width: 120px;
+}
+#mainInicio .medios .cuotas-interes .mensaje-somos {
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+}
+#mainInicio .linea {
+  border-top: 2px solid black;
+  height: 2px;
+  padding: 0;
+}
+#mainInicio .mensajeBienvenida {
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 10px 20px 0px;
+}
+#mainInicio .mensaje-somos {
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+#mainProductos {
+  margin: 50px 50px 50px 50px;
+}
+#mainProductos #productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-bottom: 40px;
+}
+#mainProductos #productos .titulo-productos {
+  font-size: 50px;
+}
+#mainProductos .carreteProd-primero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+#mainProductos .carreteProd-primero .tarjetaProd {
+  width: 500px;
+}
+#mainProductos .carreteProd-primero .tarjetaProd .imagProd {
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+#mainProductos .carreteProd-primero .tarjetaProd .imagProd .imagConsolas {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+#mainProductos .carreteProd-primero .tarjetaProd .imagProd .imagConsolas:hover {
+  transform: scale(1.1);
+  transition-duration: 1000ms;
+}
+#mainProductos .carreteProd-primero .tarjetaProd .imagProd p {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+#mainProductos .carreteProd-primero .tarjetaProd .imagProd strong {
+  display: flex;
+  justify-content: center;
+}
+#mainProductos .carreteProd-segundo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+#mainProductos .carreteProd-segundo .tarjetaProd {
+  width: 500px;
+}
+#mainProductos .carreteProd-segundo .tarjetaProd .imagProd {
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+#mainProductos .carreteProd-segundo .tarjetaProd .imagProd .imagConsolas {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+#mainProductos .carreteProd-segundo .tarjetaProd .imagProd .imagConsolas:hover {
+  transform: scale(1.1);
+  transition-duration: 1000ms;
+}
+#mainProductos .carreteProd-segundo .tarjetaProd .imagProd p {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+#mainProductos .carreteProd-segundo .tarjetaProd .imagProd strong {
+  display: flex;
+  justify-content: center;
+}
+#mainProductos .carreteProd-tercero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+#mainProductos .carreteProd-tercero .tarjetaProd {
+  width: 500px;
+}
+#mainProductos .carreteProd-tercero .tarjetaProd .imagProd {
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+#mainProductos .carreteProd-tercero .tarjetaProd .imagProd .imagConsolas {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+#mainProductos .carreteProd-tercero .tarjetaProd .imagProd .imagConsolas:hover {
+  transform: scale(1.1);
+  transition-duration: 1000ms;
+}
+#mainProductos .carreteProd-tercero .tarjetaProd .imagProd p {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+#mainProductos .carreteProd-tercero .tarjetaProd .imagProd strong {
+  display: flex;
+  justify-content: center;
+}
+#mainProductos .carreteProd-cuarto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+#mainProductos .carreteProd-cuarto .tarjetaProd {
+  width: 500px;
+}
+#mainProductos .carreteProd-cuarto .tarjetaProd .imagProd {
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+#mainProductos .carreteProd-cuarto .tarjetaProd .imagProd .imagConsolas {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+#mainProductos .carreteProd-cuarto .tarjetaProd .imagProd .imagConsolas:hover {
+  transform: scale(1.1);
+  transition-duration: 1000ms;
+}
+#mainProductos .carreteProd-cuarto .tarjetaProd .imagProd p {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+#mainProductos .carreteProd-cuarto .tarjetaProd .imagProd strong {
+  display: flex;
+  justify-content: center;
+}
+
+#mainTiendas {
+  margin: 50px 50px 50px 50px;
+}
+#mainTiendas #tiendas {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-bottom: 40px;
+}
+#mainTiendas #tiendas .titulo-tiendas {
+  font-size: 50px;
+}
+#mainTiendas .mapa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+#mainTiendas .mapa .nombre-tienda {
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 10px 20px 0px;
+}
+#mainTiendas .mapa .nombre-tienda .img-tienda {
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+}
+#mainTiendas .mapa .nombre-tienda .img-tienda:hover {
+  transform: scale(1.1);
+  transition-duration: 1000ms;
+}
+#mainTiendas .mapa .nombre-tienda .linea {
+  border-top: 2px solid black;
+  height: 2px;
+  padding: 0;
+}
+#mainTiendas .mapa .nombre-tienda .mensaje-tienda {
+  font-size: 20px;
+}
+#mainTiendas .mapa .maps {
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 10px 20px 0px;
+}
+
+#mainContacto {
+  margin: 50px 50px 50px 50px;
+}
+#mainContacto .titulo-contacto {
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+#mainContacto .form-contacto {
+  font-size: 20px;
+  margin: 0px 0px 20px 0px;
+  padding: 10px 400px 10px 10px;
+}
+#mainContacto .form-control {
+  width: 400px;
+}
+
+#mainCarrito {
+  margin: 10px 0px 10px 0px;
+}
+
+#mainCarrito .mensajeBienvenida .trabajandoSitio {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 20px 0px;
+}
+
+#piePrincipal {
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 30px;
+  background-color: black;
+}
+
+#piePrincipal a {
+  width: 100px;
+}
+
+#piePrincipal .logoNegro {
+  display: grid;
+  grid-template-columns: -80px;
+  margin-left: -80px;
+  width: 150px;
+}
+
+#piePrincipal .social {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  justify-content: end;
+  margin-top: -75px;
+  width: -750px;
+}
+
+#pieSecundario {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#pieSecundario .segundoTexto .derechos {
+  color: black;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 793px) {
+  header {
+    background-color: rgb(250, 242, 242);
+    padding: 10px 10px 10px 10px;
+  }
+  .pagPrincipal {
+    font-size: 13px;
+  }
+  .barraNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 200px;
+  }
+  .busqueda {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 200px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(10, 10, 65);
+  }
+  #mainTiendas {
+    margin: 50px 50px 50px 50px;
+  }
+  #mainTiendas #tiendas {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 40px;
+  }
+  #mainTiendas #tiendas .titulo-tiendas {
+    font-size: 30px;
+  }
+  #mainTiendas .mapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
+  #mainTiendas .mapa .nombre-tienda {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 10px 20px 0px;
+  }
+  #mainTiendas .mapa .maps {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 10px 20px 0px;
+  }
+  .img-tienda {
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+  }
+  .mensaje-tienda {
+    font-size: 12px;
+  }
+  .dimension-mapas {
+    width: 200px;
+    height: 100px;
+  }
+  #piePrincipal .social {
+    display: grid;
+    justify-content: center;
+    margin-top: -75px;
+    padding-top: 100px;
+  }
+  #pieSecundario .segundoTexto .derechos {
+    color: black;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    background-color: rgb(250, 242, 242);
+    padding: 10px 10px 10px 10px;
+  }
+  .pagPrincipal {
+    font-size: 13px;
+  }
+  .barraNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 200px;
+  }
+  .busqueda {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 200px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(10, 10, 65);
+  }
+  #mainInicio {
+    margin: 0px 0px 10px 0px;
+  }
+  .tarjetas {
+    width: 80px;
+  }
+  .courier {
+    width: 50px;
+  }
+  #mainInicio .mensajeBienvenida {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+    font-weight: normal;
+  }
+  #mainInicio .mensaje-somos {
+    font-size: 14px;
+  }
+  #mainProductos #productos .titulo-productos {
+    font-size: 40px;
+  }
+  .imagProd p {
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+  }
+  strong {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+  }
+  #mainTiendas {
+    margin: 50px 50px 50px 50px;
+  }
+  #mainTiendas #tiendas {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 40px;
+  }
+  #mainTiendas #tiendas .titulo-tiendas {
+    font-size: 30px;
+  }
+  #mainTiendas .mapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
+  #mainTiendas .mapa .nombre-tienda {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 10px 20px 0px;
+  }
+  #mainTiendas .mapa .maps {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 10px 20px 0px;
+  }
+  .img-tienda {
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+  }
+  .mensaje-tienda {
+    font-size: 12px;
+  }
+  .dimension-mapas {
+    width: 200px;
+    height: 100px;
+  }
+  #mainContacto {
+    margin: 10px 0px 10px 0px;
+  }
+  #mainContacto .titulo-contacto {
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+  #mainContacto .form-contacto {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    padding: 10px 400px 10px 10px;
+  }
+  #mainContacto .form-control {
+    width: 200px;
+  }
+  #piePrincipal .social {
+    display: grid;
+    justify-content: center;
+    margin-top: -75px;
+    padding-top: 100px;
+  }
+  #pieSecundario .segundoTexto .derechos {
+    color: black;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 427px) {
+  header {
+    background-color: rgb(250, 242, 242);
+    padding: 10px 10px 10px 10px;
+  }
+  .pagPrincipal {
+    font-size: 13px;
+  }
+  .barraNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 200px;
+  }
+  .busqueda {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 200px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(10, 10, 65);
+  }
+  #mainInicio {
+    margin: 0px 0px 10px 0px;
+  }
+  .tarjetas {
+    width: 65px;
+  }
+  .courier {
+    width: 35px;
+  }
+  #mainInicio .mensajeBienvenida {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+    font-weight: normal;
+  }
+  #mainInicio .mensaje-somos {
+    font-size: 14px;
+  }
+  #mainProductos #productos .titulo-productos {
+    font-size: 30px;
+  }
+  .imagProd p {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  strong {
+    display: flex;
+    justify-content: center;
+    font-size: 9px;
+  }
+  #mainTiendas {
+    margin: 50px 50px 50px 50px;
+  }
+  #mainTiendas #tiendas {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 40px;
+  }
+  #mainTiendas #tiendas .titulo-tiendas {
+    font-size: 30px;
+  }
+  #mainTiendas .mapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
+  #mainTiendas .mapa .nombre-tienda {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 10px 20px 0px;
+  }
+  #mainTiendas .mapa .maps {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 10px 20px 0px;
+  }
+  .img-tienda {
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+  }
+  .mensaje-tienda {
+    font-size: 12px;
+  }
+  #mainContacto {
+    margin: 10px 0px 10px 0px;
+  }
+  #mainContacto .titulo-contacto {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+  #mainContacto .form-contacto {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    padding: 10px 400px 10px 10px;
+  }
+  #mainContacto .form-control {
+    width: 200px;
+  }
+  #piePrincipal .social {
+    display: grid;
+    justify-content: center;
+    margin-top: -75px;
+    padding-top: 100px;
+  }
+  #pieSecundario .segundoTexto .derechos {
+    color: black;
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

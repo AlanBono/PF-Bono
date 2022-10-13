@@ -1,0 +1,524 @@
+@media screen and (max-width: 427px) {
+    .pagPrincipal {
+        font-size: 13px;
+
+        header {
+            background-color: rgb(250, 242, 242);
+            padding: 10px 10px 10px 10px;
+
+            .busqueda {
+                display: grid;
+                grid-template-columns: auto;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 200px;
+            }
+
+            .barraNav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-left: 200px;
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        display: inline-block;
+                        margin-top: 20px;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 600;
+                            padding: 20px;
+                            color: rgb(10, 10, 65)
+                        }
+                    }
+                }
+            }
+        }
+
+        #mainInicio {
+            margin: 0px 0px 10px 0px;
+
+            .medios {
+                .envio-pais {
+
+                    .courier {
+                        width: 35px;
+                    }
+
+                    .mensaje-somos {
+                        font-size: 14px;
+                    }
+
+                }
+
+                .cuotas-interes {
+
+                    .tarjetas {
+                        width: 65px;
+                    }
+
+                    .mensaje-somos {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .mensajeBienvenida {
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                margin: 0px 0px 20px 0px;
+                font-weight: normal;
+
+            }
+        }
+
+
+
+        #mainProductos {
+            #productos {
+
+                .titulo-productos {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .imagProd {
+            p {
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            }
+
+            strong {
+                display: flex;
+                justify-content: center;
+                font-size: 9px;
+            }
+        }
+
+    
+
+        #mainTiendas {
+            margin: 50px 50px 50px 50px;
+            #tiendas {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                margin-bottom: 40px;
+
+                .titulo-tiendas {
+                    font-size: 30px;
+                }
+            }
+
+            .mapa {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-bottom: 80px;
+
+                .nombre-tienda {
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: 30px 10px 20px 0px;
+
+                    .img-tienda {
+                        border-radius: 10px 10px 10px 10px;
+                        width: 100%;
+                    }
+
+                    .mensaje-tienda {
+                        font-size: 12px;
+                    }
+        
+                }
+                
+                .maps {
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: 30px 10px 20px 0px;
+        
+                }
+    
+            }
+
+        }
+
+        #mainContacto {
+            margin: 10px 0px 10px 0px;
+
+            .titulo-contacto {
+                font-size: 30px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-bottom: 40px;
+            }
+
+            .form-contacto {
+                font-size: 20px;
+                margin: 0px 0px 20px 0px;
+                padding: 10px 400px 10px 10px;
+            }
+
+            .form-control {
+                width: 200px;
+    
+            }
+        }
+
+        #piePrincipal {
+
+            .social {
+                display: grid;
+                justify-content: center;
+                margin-top: -75px;
+                padding-top: 100px;
+            }
+        }
+
+        #pieSecundario {
+            .segundoTexto {
+
+                .derechos {
+                    color: black;
+                    font-size: 10px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pagPrincipal {
+        font-size: 13px;
+
+        header {
+            background-color: rgb(250, 242, 242);
+            padding: 10px 10px 10px 10px;
+
+            .busqueda {
+                display: grid;
+                grid-template-columns: auto;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 200px;
+            }
+
+            .barraNav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-left: 200px;
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        display: inline-block;
+                        margin-top: 20px;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 600;
+                            padding: 20px;
+                            color: rgb(10, 10, 65)
+                        }
+                    }
+                }
+            }
+        }
+
+        #mainInicio {
+            margin: 0px 0px 10px 0px;
+
+            .tarjetas {
+                width: 80px;
+            }
+
+            .courier {
+                width: 50px;
+            }
+
+            .mensajeBienvenida {
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                margin: 0px 0px 20px 0px;
+                font-weight: normal;
+
+            }
+
+            .mensaje-somos {
+                font-size: 14px;
+            }
+        }
+
+        #mainProductos {
+            #productos {
+                .titulo-productos {
+                    font-size: 40px;
+                }
+            }
+
+            .imagProd {
+                p {
+                    font-size: 13px;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 12px;
+
+                }
+
+                strong {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+    #mainTiendas {
+        margin: 50px 50px 50px 50px;
+
+        #tiendas {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-bottom: 40px;
+
+            .titulo-tiendas {
+                font-size: 30px;
+            }
+        }
+
+        .mapa {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 80px;
+
+            .nombre-tienda {
+                font-size: 15px;
+                display: flex;
+                justify-content: flex-end;
+                margin: 30px 10px 20px 0px;
+
+
+                .img-tienda {
+                    border-radius: 10px 10px 10px 10px;
+                    width: 100%;
+                }
+
+
+                .mensaje-tienda {
+                    font-size: 12px;
+                }
+
+            }
+
+            .maps {
+                font-size: 15px;
+                display: flex;
+                justify-content: flex-end;
+                margin: 30px 10px 20px 0px;
+
+
+                .dimension-mapas {
+                    width: 200px;
+                    height: 100px;
+                }
+
+            }
+
+        }
+    }
+
+    #mainContacto {
+        margin: 10px 0px 10px 0px;
+
+        .titulo-contacto {
+            font-size: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-bottom: 40px;
+        }
+
+
+        .form-contacto {
+            font-size: 20px;
+            margin: 0px 0px 20px 0px;
+            padding: 10px 400px 10px 10px;
+        }
+
+
+        .form-control {
+            width: 200px;
+
+        }
+    }
+
+    #piePrincipal {
+
+        .social {
+            display: grid;
+            justify-content: center;
+            margin-top: -75px;
+            padding-top: 100px;
+        }
+    }
+
+    #pieSecundario {
+        .segundoTexto {
+
+            .derechos {
+                color: black;
+                font-size: 10px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 793px) {
+
+    .pagPrincipal {
+        font-size: 13px;
+
+        header {
+            background-color: rgb(250, 242, 242);
+            padding: 10px 10px 10px 10px;
+
+            .busqueda {
+                display: grid;
+                grid-template-columns: auto;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 200px;
+            }
+
+            .barraNav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-left: 200px;
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        display: inline-block;
+                        margin-top: 20px;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 600;
+                            padding: 20px;
+                            color: rgb(10, 10, 65)
+                        }
+                    }
+                }
+            }
+        }
+
+        #mainTiendas {
+            margin: 50px 50px 50px 50px;
+
+            #tiendas {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                margin-bottom: 40px;
+
+                .titulo-tiendas {
+                    font-size: 20px;
+                }
+
+            }
+
+            .mapa {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-bottom: 80px;
+
+                .nombre-tienda {
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: 30px 10px 20px 0px;
+
+                    .img-tienda {
+                        border-radius: 10px 10px 10px 10px;
+                        width: 100%;
+                    }
+
+                    .linea {
+                        border-top: 2px solid black;
+                        height: 2px;
+                        padding: 0;
+                    }
+
+                    .mensaje-tienda {
+                        font-size: 12px;
+                    }
+
+                }
+
+                .maps {
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: 30px 10px 20px 0px;
+
+                    .dimension-mapas {
+                        width: 200px;
+                        height: 100px;
+                    }
+
+                }
+
+            }
+        }
+
+        #piePrincipal {
+
+            .social {
+                display: grid;
+                justify-content: center;
+                margin-top: -75px;
+                padding-top: 100px;
+            }
+        }
+
+        #pieSecundario {
+            .segundoTexto {
+
+                .derechos {
+                    color: black;
+                    font-size: 10px;
+                }
+            }
+        }
+
+    }
+
+}

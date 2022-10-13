@@ -1,0 +1,60 @@
+#mainTiendas {
+    margin: 50px 50px 50px 50px;
+
+    #tiendas {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-bottom: 40px;
+
+        .titulo-tiendas {
+            font-size: 50px;
+        }
+    }
+
+    .mapa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 80px;
+
+        .nombre-tienda {
+            font-size: 50px;
+            display: flex;
+            justify-content: flex-end;
+            margin: 30px 10px 20px 0px;
+
+            .img-tienda {
+                border-radius: 10px 10px 10px 10px;
+                width: 100%;
+            }
+
+            .img-tienda:hover {
+                transform: scale(1.1);
+                transition-duration: 1000ms;
+
+            }
+
+            .linea {
+                border-top: 2px solid black;
+                height: 2px;
+                padding: 0;
+            }
+            .mensaje-tienda {
+                font-size: 20px;
+            }
+
+        }
+
+        .maps {
+            font-size: 50px;
+            display: flex;
+            justify-content: flex-end;
+            margin: 30px 10px 20px 0px;
+
+        }
+
+    }
+
+
+}

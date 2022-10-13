@@ -1,0 +1,25 @@
+#mainContacto {
+    margin: 50px 50px 50px 50px;
+
+    .titulo-contacto {
+        font-size: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-bottom: 40px;
+    }
+
+    .form-contacto {
+        font-size: 20px;
+        margin: 0px 0px 20px 0px;
+        padding: 10px 400px 10px 10px;
+
+    }
+
+    .form-control {
+        width: 400px;
+    }
+
+
+
+}

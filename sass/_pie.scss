@@ -1,0 +1,38 @@
+#piePrincipal {
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+    background-color: black;
+}
+
+#piePrincipal a {
+    width: 100px;
+}
+
+#piePrincipal .logoNegro {
+    display: grid;
+    grid-template-columns: -80px;
+    margin-left: -80px;
+    width: 150px;
+}
+
+#piePrincipal .social {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    justify-content: end;
+    margin-top: -75px;
+    width: -750px;
+}
+
+#pieSecundario {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#pieSecundario .segundoTexto .derechos {
+    color: black;
+    font-size: 20px;
+}

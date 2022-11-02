@@ -1,5 +1,5 @@
 #mainTiendas {
-    margin: 50px 50px 50px 50px;
+    @extend #mainContacto;
 
     #tiendas {
         display: flex;
@@ -8,18 +8,18 @@
         margin-bottom: 40px;
 
         .titulo-tiendas {
-            font-size: 50px;
+            font-size: $title-font;
         }
     }
 
     .mapa {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
         margin-bottom: 80px;
 
         .nombre-tienda {
-            font-size: 50px;
             display: flex;
             justify-content: flex-end;
             margin: 30px 10px 20px 0px;
@@ -35,11 +35,16 @@
 
             }
 
-            .linea {
+            .subtitulos-tiendas {
+                font-size: 40px;
+            }
+
+            .linea-tiendas {
                 border-top: 2px solid black;
                 height: 2px;
                 padding: 0;
             }
+
             .mensaje-tienda {
                 font-size: 20px;
             }
@@ -47,10 +52,7 @@
         }
 
         .maps {
-            font-size: 50px;
-            display: flex;
-            justify-content: flex-end;
-            margin: 30px 10px 20px 0px;
+            @extend .nombre-tienda;
 
         }
 

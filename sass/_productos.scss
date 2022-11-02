@@ -1,5 +1,5 @@
 #mainProductos {
-    margin: 50px 50px 50px 50px;
+    @extend #mainContacto;
 
     #productos {
         display: flex;
@@ -8,14 +8,13 @@
         margin-bottom: 40px;
 
         .titulo-productos {
-            font-size: 50px;
-
-
+            font-size: $title-font;
         }
     }
 
-    .carreteProd-primero {
+    .carreteProd {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
         padding-bottom: 50px;
@@ -40,157 +39,19 @@
 
                 }
 
-                p {
+                .nombre-prod {
                     font-size: 20px;
                     font-weight: bold;
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-start;
                     margin-top: 15px;
 
                 }
 
-                strong {
+                .precio-prod {
                     display: flex;
-                    justify-content: center;
-                }
-
-            }
-
-        }
-
-    }
-
-    .carreteProd-segundo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-bottom: 50px;
-
-        .tarjetaProd {
-            width: 500px;
-
-            .imagProd {
-                border-radius: 10px 10px 10px 10px;
-                padding: 10px 10px 10px 10px;
-
-                .imagConsolas {
-                    width: 100%;
-                    border-radius: 10px 10px 10px 10px;
-
-                }
-
-                .imagConsolas:hover {
-                    transform: scale(1.1);
-                    transition-duration: 1000ms;
-
-
-                }
-
-                p {
-                    font-size: 20px;
-                    font-weight: bold;
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 15px;
-
-                }
-
-                strong {
-                    display: flex;
-                    justify-content: center;
-                }
-
-            }
-
-        }
-
-    }
-
-    .carreteProd-tercero {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-bottom: 50px;
-
-        .tarjetaProd {
-            width: 500px;
-
-            .imagProd {
-                border-radius: 10px 10px 10px 10px;
-                padding: 10px 10px 10px 10px;
-
-                .imagConsolas {
-                    width: 100%;
-                    border-radius: 10px 10px 10px 10px;
-
-                }
-
-
-                .imagConsolas:hover {
-                    transform: scale(1.1);
-                    transition-duration: 1000ms;
-
-
-                }
-
-                p {
-                    font-size: 20px;
-                    font-weight: bold;
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 15px;
-
-                }
-
-                strong {
-                    display: flex;
-                    justify-content: center;
-                }
-
-            }
-
-        }
-
-    }
-
-    .carreteProd-cuarto {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-bottom: 50px;
-
-        .tarjetaProd {
-            width: 500px;
-
-            .imagProd {
-                border-radius: 10px 10px 10px 10px;
-                padding: 10px 10px 10px 10px;
-
-                .imagConsolas {
-                    width: 100%;
-                    border-radius: 10px 10px 10px 10px;
-
-                }
-
-                .imagConsolas:hover {
-                    transform: scale(1.1);
-                    transition-duration: 1000ms;
-
-
-                }
-
-                p {
-                    font-size: 20px;
-                    font-weight: bold;
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 15px;
-
-                }
-
-                strong {
-                    display: flex;
-                    justify-content: center;
+                    justify-content: flex-start;
+                    margin-bottom: 10px;
                 }
 
             }

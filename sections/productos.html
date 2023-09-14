@@ -14,6 +14,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="../styles/estilos.css">
   <link rel="icon" href="../media/favicon-1.ico">
 
@@ -36,17 +37,8 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Productos
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="nav-link active" href="./productos.html">Todos los productos</a></li>
-                <li><a class="nav-link active" href="./productos-sony.html">Sony</a></li>
-                <li><a class="nav-link active" href="./productos-microsoft.html">Microsoft</a></li>
-                <li><a class="nav-link active" href="./productos-juegos.html">Juegos</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./tiendas.html">Tiendas</a>
@@ -58,14 +50,13 @@
               <a class="nav-link active" aria-current="page" href="./preguntasfrecuentes.html">FAQs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html"><i
-                  class="fa fa-shopping-cart"></i></a>
+              <a id="ver-carrito" class="nav-link active" aria-current="page" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" href="./carrito.html">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="carrito-contador" class="badge bg-secondary">0</span>
+              </a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder=".buscá en nuestra tienda" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Buscar</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -73,23 +64,24 @@
 
   </header>
 
-  <!-- modal -->
-  <section class="paginas-modal">
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ya tenes el producto en tu carrito!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Continuar en la pagina</button>
-            <a href="../index.html"><button type="button" class="btn btn-success">Finalizar la compra</button></a>
-          </div>
-        </div>
-      </div>
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+    id="carritoOffcanvas" aria-labelledby="carritoOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="carritoOffcanvasLabel">Carrito de Compras</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-  </section>
+    <div class="offcanvas-body">
+      <ul id="carrito-lista-offcanvas">
+      </ul>
+      <p id="total-carrito">Total: $0.00</p>
+      <div class="acciones button">
+      <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="offcanvas">.cerrar</button>
+      <button id="eliminar-todos" class="btn btn-dark btn-sm">.vaciar carrito</button>
+      <button id="finalizar-compra" type="button" class="btn btn-dark btn-sm">.finalizar la
+          compra</button></a>
+        </div>
+    </div>
+  </div>
 
   <div class="wp">
     <a class="icono-wp" href="https://api.whatsapp.com/send?phone=987654321"><i class="fa fa-whatsapp"></i></a>
@@ -101,143 +93,18 @@
       <h1 class="titulo-productos">.productos</h1>
     </div>
 
-    <section class="carreteProd">
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/productosPlay5.png" alt="play5"> </a>
-          <p class="nombre-prod">Playstation 5</p>
-          <strong class="precio-prod">$299.999</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
+    <div id="categorias">
+      <h3 class="titulo-categorias">.filtrar por categoría</h3>
+      <div class="botones-filtros">
+        <button id="filtro-todos" class="btn btn-outline-secondary">.todos los productos</button>
+        <button id="filtro-consolas" class="btn btn-outline-dark">.consolas</button>
+        <button id="filtro-juegos" class="btn btn-outline-dark">.juegos</button>
+        <button id="filtro-accesorios" class="btn btn-outline-dark">.accesorios</button>
         </div>
-      </div>
+    </div>
 
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/joystickps5.jpg" alt="joystickps5">
-          </a>
-          <p class="nombre-prod">Joystick DualSense Playstation 5</p>
-          <strong class="precio-prod">$49.999</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/SonyPulse3D.jpg" alt="SonyPulse3D">
-          </a>
-          <p class="nombre-prod">Auriculares Sony Pulse 3D</p>
-          <strong class="precio-prod">$42.999</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="carreteProd">
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/xboxseriess.jpg" alt="xboxseriess">
-          </a>
-          <p class="nombre-prod">Xbox Series S │ .hasta 6 cuotas sin interés</p>
-          <strong class="precio-prod">$119.999</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/xboxrobotwhite.jpg" alt="xboxrobotwhite"> </a>
-          <p class="nombre-prod">Xbox Series Controller Robot White</p>
-          <strong class="precio-prod">$24.999</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/xboxwirelessheadset.jpg"
-              alt="xboxwirelessheadset"> </a>
-          <p class="nombre-prod">Xbox Wireless Headset</p>
-          <strong class="precio-prod">$39.999</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="carreteProd">
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/xboxseriesx.jpg" alt="xboxseriesx">
-          </a>
-          <p class="nombre-prod">Xbox Series X</p>
-          <strong class="precio-prod">$269.999</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/xboxseriesxcontroller.jpg"
-              alt="xboxseriesxcontroller"> </a>
-          <p class="nombre-prod">Xbox Series Controller Black</p>
-          <strong class="precio-prod">$24.999</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/cameraplaystation5.jpg"
-              alt="cameraplaystation5"> </a>
-          <p class="nombre-prod">Playstation 5 HD Camera</p>
-          <strong class="precio-prod">$25.599</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="carreteProd">
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/fifa23.png" alt="fifa23ps5"> </a>
-          <p class="nombre-prod">FIFA 23 │ Playstation 5</p>
-          <strong class="precio-prod">$17.999</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/haloinfinite.jpg" alt="haloinfinite">
-          </a>
-          <p class="nombre-prod">Halo Infinite │ Xbox Series X</p>
-          <strong class="precio-prod">$18.999</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-
-      <div class="tarjetaProd">
-        <div class="imagProd">
-          <a href="#"> <img class="imagConsolas" src="../media/productos/xboxgamepass.jpg" alt="xboxgamepass">
-          </a>
-          <p class="nombre-prod">1 mes de Suscripción Xbox GamePass Ultimate</p>
-          <strong class="precio-prod">$899</strong>
-          <a href="#" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">.añadir al
-            carrito</a>
-        </div>
-      </div>
-    </section>
-
+    <div id="productos-container" class="row">
+    </div>
 
   </main>
 
@@ -267,9 +134,15 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script>
     AOS.init();
   </script>
+  <script src="../js/carrito.js"></script>
+  <script src="../js/productos.js"></script>
+  <script src="../js/main.js"></script>
+
 
 </body>
 
